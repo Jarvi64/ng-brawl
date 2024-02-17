@@ -17,3 +17,25 @@ export class ClubInfoDto{
         ){}
 }
 
+export class PlayerDto {
+    constructor(
+      public tag: string,
+      public name: string,
+      public nameColor: string,
+      public icon: { id: number },
+      public trophies: number,
+      public threevs3Victories: number,
+      public bestRoboRumbleTime: number,
+      public bestTimeAsBigBrawler: number,
+      public brawlers: any[], 
+      public club: { tag: string, name: string },
+      public duoVictories: number,
+      public expLevel: number,
+      public expPoints: number,
+      public highestPowerPlayPoints: number,
+      public highestTrophies: number,
+      public isQualifiedFromChampionshipChallenge: boolean,
+      public soloVictories: number,
+    ) {}
+  }
+
