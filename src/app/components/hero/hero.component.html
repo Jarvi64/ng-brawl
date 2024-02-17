@@ -20,7 +20,7 @@
     <div class="py-2 px-2 list">
         @if(player.role === "president"){
             <div class="py-2 px-3 president">
-                <div class="row">
+                <div class="row" (click)="navigate(player.tag)">
                     <div class="col"><p>{{i+1}}</p></div>
                     <div class="col"><p>{{player.name}}</p></div>
                     <div class="col"><p>{{player.role}}</p></div>
@@ -30,7 +30,7 @@
         }
         @else if(player.role === "member"){
             <div class="py-2 px-3 member">
-                <div class="row">
+                <div class="row" (click)="navigate(player.tag)">
                     <div class="col"><p>{{i+1}}</p></div>
                     <div class="col"><p>{{player.name}}</p></div>
                     <div class="col"><p>{{player.role}}</p></div>
@@ -40,7 +40,7 @@
         }
         @else if(player.role === "senior"){
             <div class="py-2 px-3 senior">
-                <div class="row">
+                <div class="row" (click)="navigate(player.tag)">
                     <div class="col"><p>{{i+1}}</p></div>
                     <div class="col"><p>{{player.name}}</p></div>
                     <div class="col"><p>{{player.role}}</p></div>
@@ -50,7 +50,7 @@
         }
         @else{
             <div class="py-2 px-3 vice-president">
-                <div class="row">
+                <div class="row" (click)="navigate(player.tag)">
                     <div class="col"><p>{{i+1}}</p></div>
                     <div class="col"><p>{{player.name}}</p></div>
                     <div class="col"><p>{{player.role}}</p></div>
