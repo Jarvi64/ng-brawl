@@ -1,4 +1,4 @@
-.container{
+.bgs{
     font-family: "Protest Strike", sans-serif;    color: white;
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9aQzF2WUo0Z3o5Z1hoZ04xUTJLRy5wbmcifQ:supercell:dKaZnOCMIr1CkczFvEf8oqfAjIa0b3JMKaguwWpBNXE?width=800');
@@ -7,5 +7,15 @@
     background-size: cover;
     height: 100%;
     text-shadow: 2px 2px 2px #000000;
-
 }
+
+.loader-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    background-image: url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9vRVBUZlBiNXB0V1Q1S3hDcGVnNy5qcGcifQ:supercell:tcfLS1SFCAvUJUnm4bZpbWAcKf8JJeMF2NvvjjrTgVw?width=800');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
