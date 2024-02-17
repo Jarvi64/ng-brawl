@@ -1,0 +1,60 @@
+section{
+    font-family: "Protest Strike", sans-serif;    color: white;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9HNHVSR0d5RDZWa0hqaFlIRnd3Qy5wbmcifQ:supercell:lGyc76IQni7ATAxC1e1yzl8RiZuwpPESw43Hv57DgJo?width=2400');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-shadow: 4px 4px 4px #000000;
+}
+
+.list{
+    font-family: "Protest Strike", sans-serif;    color: white;
+    background-color: rgb(50, 50, 50);
+}
+
+.president {
+    border: 2px solid gold;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC8xb2ZpeDFVV3RjVjdZNHpOU1h0MS5wbmcifQ:supercell:o5MwOOGLIPRWo45vH541ce9mdu6PCZtegLHh3OXJhwE?width=800');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 4px 4px 4px #000000;
+
+}
+
+.member {
+    color: #ffffff;
+    border: 2px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC8xSFhuOVo5RE1hOVdoOHBzUjZyYi5wbmcifQ:supercell:_Xse4BG_gp1ulfMGpKVP-MmW8qh7Q1rKcj3HucbmjTw?width=800');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 4px 4px 4px #000000;
+
+}
+
+.vice-president {
+    border: 2px solid silver;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9wYkZHNTdBZzYyMUM4R0dEVHo1TS5wbmcifQ:supercell:RevPE0d0Mj1UOpAs7PJWegDBRmMMGCfOEyzlJ5uprYo?width=800');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 4px 4px 4px #000000;
+
+}
+
+.senior {
+    color: #ffffff;
+    border: 2px solid brown;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC93Z3VYdVdyZFdUTHRXcG54M01VTC5wbmcifQ:supercell:-AP1YmHMVk5y9MZGtGH7QKMgXXH2wseKlOkMUCBaI1M?width=800');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 4px 4px 4px #000000;
+
+}
+

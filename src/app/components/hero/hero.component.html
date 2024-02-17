@@ -1,0 +1,62 @@
+@if(store.isloading()){
+    loading...
+}
+@else {
+    <section class="py-3 px-4">
+        <h1 class="display-5 fw-bold">{{store.clubInfo()?.name}}</h1>
+        <p class="pt-3">{{store.clubInfo()?.description}}</p>
+        <div class="row py-5">
+          <div class="col-md-6">
+            <p>Tag: {{store.clubInfo()?.tag}}</p>  
+            <p>President: {{store.president()?.name}}</p>  
+          </div>
+          <div class="col-md-6">
+            <p>Trophies: {{store.clubInfo()?.trophies}}</p>
+            <p>RequiredTrophies: {{store.clubInfo()?.requiredTrophies}}</p>  
+          </div>
+        </div>
+    </section>
+    @for(player of store.clubInfo()?.members ;track player.tag; let  i = $index){
+    <div class="py-2 px-2 list">
+        @if(player.role === "president"){
+            <div class="py-2 px-3 president">
+                <div class="row">
+                    <div class="col"><p>{{i+1}}</p></div>
+                    <div class="col"><p>{{player.name}}</p></div>
+                    <div class="col"><p>{{player.role}}</p></div>
+                    <div class="col"><p>{{player.trophies}}</p></div>
+                </div>
+            </div>
+        }
+        @else if(player.role === "member"){
+            <div class="py-2 px-3 member">
+                <div class="row">
+                    <div class="col"><p>{{i+1}}</p></div>
+                    <div class="col"><p>{{player.name}}</p></div>
+                    <div class="col"><p>{{player.role}}</p></div>
+                    <div class="col"><p>{{player.trophies}}</p></div>
+                </div>
+            </div>
+        }
+        @else if(player.role === "senior"){
+            <div class="py-2 px-3 senior">
+                <div class="row">
+                    <div class="col"><p>{{i+1}}</p></div>
+                    <div class="col"><p>{{player.name}}</p></div>
+                    <div class="col"><p>{{player.role}}</p></div>
+                    <div class="col"><p>{{player.trophies}}</p></div>
+                </div>
+            </div>
+        }
+        @else{
+            <div class="py-2 px-3 vice-president">
+                <div class="row">
+                    <div class="col"><p>{{i+1}}</p></div>
+                    <div class="col"><p>{{player.name}}</p></div>
+                    <div class="col"><p>{{player.role}}</p></div>
+                    <div class="col"><p>{{player.trophies}}</p></div>
+                </div>
+            </div>
+        }
+    </div>
+}}
