@@ -15,11 +15,13 @@ export class DetailComponent implements OnInit{
   http = inject(HttpClient);
   player?:PlayerDto;
   victory?:number;
+  isloading:boolean = true;
   ngOnInit() {
     this.tag = this.activateRoute.snapshot.params['tag'];
     this.http.get<any>('https://brawl-gang-backend.onrender.com/player/'+ this.tag?.substring(1)).subscribe(
       {
-        next:(res)=>{this.player = res;
+        next:(res)=>{
+          this.isloading = false;this.player = res;
            this.victory = res['3vs3Victories'];
         },
         error:(err)=>{console.log(err);
