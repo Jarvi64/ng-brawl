@@ -1,4 +1,10 @@
-<div class="container">
+@if(isloading){
+    <div class="loader-container">
+        <img class="loader" src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC80RzU3Rlo3THNoWjZ6bmdLZ3NROC5naWYifQ:supercell:78mgzWFZviaTdC5Wt8n7zUmMjVa8WdYsndBX78LG4Xg?width=800" alt="loader">
+    </div>
+}
+@else{
+<div class="bgs">
     <h1>Player Details</h1>
     <div class="row">
       <div class="col">
@@ -23,3 +29,4 @@
       </div>
     </div>
   </div>
+}
