@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Player Details</h1>
+    <div class="row">
+      <div class="col">
+        <p><strong>Tag:</strong> {{ this.player?.tag }}</p>
+        <p><strong>Name:</strong> {{ this.player?.name }}</p>
+        <p><strong>Name Color:</strong> {{ this.player?.nameColor }}</p>
+        <p><strong>Trophies:</strong> {{ this.player?.trophies }}</p>
+        <p><strong>Club:</strong> {{ this.player?.club?.name }} ({{ this.player?.club?.tag }})</p>
+      </div>
+      <div class="col">
+        <h2>Victories</h2>
+        <p><strong>3vs3 Victories:</strong> {{ this.victory }}</p>
+        <p><strong>Duo Victories:</strong> {{ this.player?.duoVictories }}</p>
+        <p><strong>Solo Victories:</strong> {{ this.player?.soloVictories }}</p>
+      </div>
+      <div class="col">
+        <h2>Experience</h2>
+        <p><strong>Experience Level:</strong> {{ this.player?.expLevel }}</p>
+        <p><strong>Experience Points:</strong> {{ this.player?.expPoints }}</p>
+        <p><strong>Highest Trophies:</strong> {{ this.player?.highestTrophies }}</p>
+        <p><strong>Highest Power Play Points:</strong> {{ this.player?.highestPowerPlayPoints }}</p>
+      </div>
+    </div>
+  </div>
