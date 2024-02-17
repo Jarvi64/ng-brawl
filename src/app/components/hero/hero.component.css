@@ -58,3 +58,15 @@ section{
 
 }
 
+.loader-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    background-image: url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9vRVBUZlBiNXB0V1Q1S3hDcGVnNy5qcGcifQ:supercell:tcfLS1SFCAvUJUnm4bZpbWAcKf8JJeMF2NvvjjrTgVw?width=800');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
