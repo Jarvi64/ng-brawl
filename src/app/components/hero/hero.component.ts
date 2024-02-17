@@ -1,7 +1,8 @@
 import { Component, OnInit, effect, inject} from '@angular/core';
-import { BrawlStore } from '../../stored/brawl.store';
+import { BrawlStore } from '../../store/brawl.store';
 import { JsonPipe } from '@angular/common';
 import { getState } from '@ngrx/signals';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
@@ -10,16 +11,13 @@ import { getState } from '@ngrx/signals';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })
-export class HeroComponent implements OnInit{
+export class HeroComponent{
   readonly store = inject(BrawlStore);
-  constructor() {
-    effect(() => {
-      const state = getState(this.store);
-      console.log('brawl state changed', state);
-    });
-  }
+  router = inject(Router);
+  route = inject(ActivatedRoute);
+  
 
-  ngOnInit(): void {
-    this.store.loadClubInfo();
+  navigate(tag:string){
+      this.router.navigate([tag], { relativeTo: this.route });
   }
 }
