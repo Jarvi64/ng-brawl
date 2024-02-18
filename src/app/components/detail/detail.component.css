@@ -1,12 +1,13 @@
 .bgs{
     font-family: "Protest Strike", sans-serif;    color: white;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9aQzF2WUo0Z3o5Z1hoZ04xUTJLRy5wbmcifQ:supercell:dKaZnOCMIr1CkczFvEf8oqfAjIa0b3JMKaguwWpBNXE?width=800');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9OenJVbkdrZTlDMkRBa01kRkVNcy5wbmcifQ:supercell:0bdICRTZDd3wvz3Jzh_8baMMrIsWzEbwrBRgYFPJWEQ?width=800');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    text-shadow: 2px 2px 2px #000000;
+    letter-spacing: 0.5px;
+    /* text-shadow: 4px 4px 4px #000000; */
 }
 
 .loader-container {
@@ -28,11 +29,7 @@
     text-shadow: 4px 4px 4px #000000;
 }
 
-  .list{
+.list{
     font-family: "Protest Strike", sans-serif;    color: white;
-    background-color: rgb(50, 50, 50);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC93Z3VYdVdyZFdUTHRXcG54M01VTC5wbmcifQ:supercell:-AP1YmHMVk5y9MZGtGH7QKMgXXH2wseKlOkMUCBaI1M?width=800');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    letter-spacing: 0.5px;
 }
