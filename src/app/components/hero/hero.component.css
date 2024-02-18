@@ -60,6 +60,7 @@ section{
 
 .loader-container {
     display: flex;
+    flex-direction: column; /* Stack items vertically */
     justify-content: center; 
     align-items: center;
     height: 100vh; 
@@ -67,6 +68,11 @@ section{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  
+    position: relative; 
+}
+
+.loader-text {
+    color: white;
+    font-family: "Protest Strike", sans-serif;    color: white;
+    text-shadow: 4px 4px 4px #000000;
+}
