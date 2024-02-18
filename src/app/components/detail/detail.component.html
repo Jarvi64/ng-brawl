@@ -1,6 +1,7 @@
 @if(isloading){
     <div class="loader-container">
         <img class="loader" src="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC80RzU3Rlo3THNoWjZ6bmdLZ3NROC5naWYifQ:supercell:78mgzWFZviaTdC5Wt8n7zUmMjVa8WdYsndBX78LG4Xg?width=800" alt="loader">
+        <div class="loader-text py-2">loading...</div>
     </div>
 }
 @else{
@@ -27,6 +28,28 @@
         <p><strong>Highest Trophies:</strong> {{ this.player?.highestTrophies }}</p>
         <p><strong>Highest Power Play Points:</strong> {{ this.player?.highestPowerPlayPoints }}</p>
       </div>
+    </div>
+  </div>
+  <div>
+    <div class="list">
+        <div class="row">
+            <p class="col">Brawler</p>
+            <p class="col">Power level</p>
+            <p class="col">Rank</p>
+            <p class="col">Trophies</p>
+            <p class="col">Highest Trophies</p>
+        </div>
+        <div class="py-2 px-3">
+        @for(brawler of this.player?.brawlers;track brawler){
+            <div class="row">
+                <p class="col">{{brawler.name}}</p>
+                <p class="col">{{brawler.power}}</p>
+                <p class="col">{{brawler.rank}}</p>
+                <p class="col">{{brawler.trophies}}</p>
+                <p class="col">{{brawler.highestTrophies}}</p>
+            </div>
+        }
+        </div>
     </div>
   </div>
 }
